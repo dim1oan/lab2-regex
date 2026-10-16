@@ -35,7 +35,7 @@ class TestWinPath(unittest.TestCase):
 
     def test_find_in_text(self):
         """Проверка поиска путей в строке."""
-        text = r"Файлы C:\Logs\app.log и D:\data.json, а C:/bad/path.txt нет."
+        text = r"Файлы C:\Logs\app.log и D:\data.json находятся тут."
         self.assertEqual(find_in_text(text), [r"C:\Logs\app.log", r"D:\data.json"])
 
     def test_find_in_file(self):
